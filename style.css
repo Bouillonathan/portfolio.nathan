@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FDF8F0;
+}
+
+
+.header {
+    background-color: #FDF8F0;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    padding-top: 20px;
+   
+}
+
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+ul li a{
+    color: black;
+    letter-spacing: 0.1em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+    word-spacing: -4px;
+}
+
+
+ul li a:hover {
+    color: #F0122D;
+}
+nav ul li a.active{
+    color: #F0122D;
+    text-decoration: none;
+}
+nav ul li a.surligne{
+    color: #F0122D;
+    text-decoration:none;
+}
+.bandeau{
+    background-color: #A7001E;
+    padding: 300px;
+}
+.bandeau h1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #FDF8F0 ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    max-width: 800px;
+    margin-left: 20px;
+    margin-top: -200px;
+}
+.bandeau p{
+    color: #FDF8F0;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 800px;
+}
+.bande{
+    background-color: #A7001E;
+    padding: 10px;
+    width: 100vw; 
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.bande h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #FDF8F0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+.mosaique {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px;
+    grid-template-areas: 
+        "parfum parfum censure"
+        "interculturalite challenge challenge"
+        "bourse graffiti documentaire";
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mosaique img, .mosaique video {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Positionnement des éléments */
+#parfum { grid-area: parfum; }
+#censure { grid-area: censure; }
+#interculturalite { grid-area: interculturalite; }
+#challenge { grid-area: challenge; }
+#graffiti { grid-area: graffiti; }
+#bourse { grid-area: bourse; }
+#documentaire { grid-area: documentaire; }
+
+#parfum{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+#interculturalite{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 30px;
+    left: -635px;
+}
+#censure{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    top: 565px;
+    left:540px ;
+}
+#challenge{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    left: 10px;
+    top: -200px;
+}
+#graffiti{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: -220px;
+    left: -25px;
+}
+#bourse{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    left: -1010px;
+    top: 330px;
+}
+#expodata{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 965px;
+    top: 337px;
+}
+#antennes{
+    width: 300px;
+    height: 500px;
+    position: relative;
+    left: -60px;
+}
+#indexation{
+    width: 300px;
+    height: 500px;
+    position: relative;
+    left:-350px ;
+    top: -510px;
+}
+#recherches{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    left: -70px;
+    top: -125px;
+}
+#jeux{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: -25px;
+    top: -505px;
+}
+#recit{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 120px;
+}
+#incident{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 65px;
+}
+#indexation{
+width: 400px;
+height: 600px;
+position: relative;
+left: -1100px;
+top: 360px;
+}
+#arbre{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 500px;
+    top: -250px;
+}
+#acte{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    left: -110px;
+    top: 90px;
+}
+#bureau{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 120px;
+}
+
+
+#missionsinrap{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 320px;
+    left: -490px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+#rapport{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 70px;
+    top: -410px;
+}
+#titreinrap{
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    left: 140px;
+    top: 10px;
+}
+#archives{
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    left: -535px;
+    top: -80px;
+    width: 900px;
+}
+#missionsarchives{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left : 680px;
+    top: -50px;
+}
+#SO{
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    left: -1100px;
+    top: 60px;
+}
+#sudouest{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 120px;
+    top: -265px;
+}
+#missionsso{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: -490px;
+    top: 20px;
+}
+#musée{
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: -350px;
+    left: -530px;
+}
+#photomusée{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 680px;
+    top: -675px;
+}
+#missionsmusée{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 70px;
+    top: -290px;
+}
